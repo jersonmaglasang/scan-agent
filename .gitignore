@@ -1,0 +1,9 @@
+obj/
+obj 
+
+.vs/
+node_modules/
+.vscode/
+
+bin/debug/
+bin/debug

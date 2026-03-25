@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; Register scan-agent:// protocol handler
+; This allows URLs like scan-agent://scan?token=xxx to launch the application
+
+[HKEY_CLASSES_ROOT\scan-agent]
+@="URL:Scan Agent Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\scan-agent\DefaultIcon]
+@="C:\\Program Files\\ScanAgent\\ScanAgent.exe,1"
+
+[HKEY_CLASSES_ROOT\scan-agent\shell]
+
+[HKEY_CLASSES_ROOT\scan-agent\shell\open]
+
+[HKEY_CLASSES_ROOT\scan-agent\shell\open\command]
+@="\"C:\\Program Files\\ScanAgent\\ScanAgent.exe\" \"%1\""
+
